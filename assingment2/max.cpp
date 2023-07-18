@@ -17,7 +17,7 @@ int maxPairSum(vector <int> &nums){
 }
 
 int main(){
-    vector <int> nums = {6,2,6,5,1,2}; //1,2,2,5,6,6
+    vector <int> nums = {1,2,2,5,6,6}; //1,2,2,5,6,6
     int result = maxPairSum(nums);
     cout<<result;
     return 0;

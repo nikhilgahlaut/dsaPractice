@@ -3,17 +3,20 @@
 
 #include<iostream>
 #include<vector>
+#include<algorithm>
 using namespace std;
 
 int main()
 {
-    vector <int> nums = {1,2,3,3,5};
+    vector <int> nums = {3,2,3,4,6,5};
     int n = nums.size();
+    // sort(nums.begin(),nums.end());
     for (int i = 0; i < n; i++)
     {
         if(nums[i] != i+1)
         {
             cout<<nums[i]<<" "<<i+1;
+            break;
         }
     }
     

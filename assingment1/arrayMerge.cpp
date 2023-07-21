@@ -8,9 +8,9 @@ int main()
 {
     vector <int> nums1= {1,3,2};
     int m = nums1.size();
-    vector <int> nums2 = {2,5,6};
+    vector <int> nums2 = {2,5};
     int n = nums2.size();
-    for(int i = 0 ;i< m;i++){
+    for(int i = 0 ;i< n;i++){
         nums1.push_back(nums2[i]);
     }
     for(int j =0 ;j<(m+n);j++){

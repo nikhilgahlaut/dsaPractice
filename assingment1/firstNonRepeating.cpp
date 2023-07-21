@@ -6,7 +6,7 @@ int firstUniqChar(string s) {
     unordered_map<char, int> charCount;
 
     // Count the frequency of each character
-    for (int i =0 ; i<s.length(); i++) 
+    for (int i = 0 ; i < s.length() ; i++) 
     {
         char c = s[i];
         charCount[c]++;

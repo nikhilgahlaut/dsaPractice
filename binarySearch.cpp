@@ -23,7 +23,7 @@ int binarySearch(vector<int> &v,int t){
 }
 
 int main(){
-    vector<int> v = {2,6,9,23,65,79,90,106};
+    vector<int> v = {2,6,9,23,65,65,65,65,79,90,106};
     int target = 65;
     cout<<binarySearch(v,target);
     return 0;

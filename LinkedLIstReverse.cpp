@@ -57,6 +57,17 @@ Node* reverseLL(Node* &head){
     return new_head;
 }
 
+//reverse linkedlist using recursion
+Node* reverseRecursion(Node* &head){
+    //base case
+    if(head==NULL || head->next == NULL) return head;
+
+    Node* new_head = reverseRecursion(head->next);
+    head->next->next = head;
+    head->next = NULL;
+    return new_head;
+}
+
 int main(){
     LinkedList ll;
     ll.insertAtTail(1);
@@ -67,7 +78,8 @@ int main(){
     ll.insertAtTail(6);
     ll.display();
 
-    ll.head = reverseLL(ll.head);
+    // ll.head = reverseLL(ll.head);
+    ll.head = reverseRecursion(ll.head);
     ll.display();
 
     return 0;
